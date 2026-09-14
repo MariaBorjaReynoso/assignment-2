@@ -1,0 +1,356 @@
+/*
+  Name: Maria Guadalupe Reynoso
+  Date: 09.13.2026
+  CSC 372-01
+
+  Stylesheet for the Campus Event Guide.
+  I organized it in this order:
+  1. Base styles
+  2. Header and navigation
+  3. Hero
+  4. Event cards (CSS Grid)
+  5. About
+  6. Event page (main + sidebar)
+  7. Related events (Flexbox)
+  8. Footer
+  9. Media queries
+*/
+
+/* ---------- 1. Base styles ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f4f6f8;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+a {
+  color: #1e6091;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Simple button style */
+.button {
+  display: inline-block;
+  background-color: #e76f51;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #c95a3e;
+}
+
+/* ---------- 2. Header and navigation ---------- */
+
+.site-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tagline {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  color: #cce0ff;
+}
+
+/* Flexbox used here for navigation */
+.site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.site-header nav a:hover {
+  background-color: #1e6091;
+}
+
+/* ---------- 3. Hero ---------- */
+
+/* Flexbox used here to put text and image side by side */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  margin: 0;
+}
+
+.hero-image img {
+  border-radius: 8px;
+}
+
+.hero-image figcaption {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ---------- 4. Event cards (CSS Grid) ---------- */
+
+.events {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Grid used here for the event cards */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Make the first card wider */
+.event-card:first-child {
+  grid-column: span 2;
+}
+
+.event-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 15px;
+}
+
+.event-info h3 {
+  margin-bottom: 5px;
+}
+
+.event-date,
+.event-location,
+.event-category {
+  font-size: 14px;
+  margin: 3px 0;
+  color: #555;
+}
+
+.event-category {
+  display: inline-block;
+  background-color: #eef3f8;
+  color: #003366;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+/* ---------- 5. About ---------- */
+
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---------- 6. Event page (main + sidebar) ---------- */
+
+.event-intro {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.event-image {
+  margin: 15px 0;
+}
+
+.event-image img {
+  border-radius: 8px;
+}
+
+.event-image figcaption {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.event-details {
+  font-size: 15px;
+}
+
+/* Grid used here for main + sidebar */
+.event-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.event-main {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.event-main h4 {
+  margin-top: 20px;
+}
+
+.event-sidebar {
+  background-color: #eef3f8;
+  padding: 20px;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.event-sidebar p {
+  margin: 8px 0;
+}
+
+/* ---------- 7. Related events (Flexbox) ---------- */
+
+.related {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Flexbox used here so cards wrap */
+.related-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.related-card {
+  flex: 1 1 220px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.related-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.related-card h3 {
+  font-size: 17px;
+  margin: 12px 15px 5px;
+}
+
+.related-card p {
+  font-size: 14px;
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+/* ---------- 8. Footer ---------- */
+
+.site-footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+/* ---------- 9. Media queries ---------- */
+
+/* Tablet and smaller */
+@media (max-width: 800px) {
+  .event-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card:first-child {
+    grid-column: auto;
+  }
+}
+
+/* Phone */
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .site-header nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .related-list {
+    flex-direction: column;
+  }
+}

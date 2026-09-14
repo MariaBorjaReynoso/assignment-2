@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+  Name: Maria Reynoso
+  Date: 09/13/2026
+  CSC 372-01
+
+  This is the index.html file for the Campus Event Guide project. 
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Event Guide | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Site header and navigation -->
+  <header class="site-header">
+    <h1>Campus Event Guide</h1>
+    <p class="tagline">Let this be your go-to source for campus events!</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#events">Upcoming Events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="event.html">Event</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Campus Events</h2>
+        <p>
+          Discover concerts, career fairs, volunteer days, and more.
+          There is always something happening on campus.
+        </p>
+        <a class="button" href="#events">See Upcoming Events</a>
+      </div>
+
+      <figure class="hero-image">
+        <img
+          src="src/images/campus-event.jpg"
+          alt="Students gathered on campus at an outdoor event">
+        <figcaption>Students at a campus event</figcaption>
+      </figure>
+    </section>
+
+    <!-- Upcoming events grid -->
+    <section id="events" class="events">
+      <h2>Upcoming Events</h2>
+
+      <div class="event-grid">
+
+        <article class="event-card">
+          <img src="src/images/band.jpg" alt="Band playing on stage">
+          <div class="event-info">
+            <h3>Fall Concert</h3>
+            <p class="event-date"><time datetime="2026-09-25T19:00">Sep 25, 7:00 PM</time></p>
+            <p class="event-location">Cone Ballroom</p>
+            <p class="event-category">Music</p>
+            <p>Live music from student bands and a special guest.</p>
+            <a href="event.html">View Details</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="https://placehold.co/400x250/2a9d8f/ffffff?text=Career+Fair" alt="Students talking to employers">
+          <div class="event-info">
+            <h3>Career Fair</h3>
+            <p class="event-date"><time datetime="2026-10-02T10:00">Oct 2, 10:00 AM</time></p>
+            <p class="event-location">EUC</p>
+            <p class="event-category">Career</p>
+            <p>Meet companies hiring for internships and jobs.</p>
+            <a href="event.html">View Details</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="https://placehold.co/400x250/e76f51/ffffff?text=Volunteer" alt="Volunteers working outside">
+          <div class="event-info">
+            <h3>Volunteer Day</h3>
+            <p class="event-date"><time datetime="2026-10-10T09:00">Oct 10, 9:00 AM</time></p>
+            <p class="event-location">Arboretum</p>
+            <p class="event-category">Service</p>
+            <p>Spend a morning giving back to the community.</p>
+            <a href="event.html">View Details</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="https://placehold.co/400x250/264653/ffffff?text=Art+Show" alt="Paintings in a gallery">
+          <div class="event-info">
+            <h3>Art Showcase</h3>
+            <p class="event-date"><time datetime="2026-10-18T17:00">Oct 18, 5:00 PM</time></p>
+            <p class="event-location">Gatewood</p>
+            <p class="event-category">Arts</p>
+            <p>See creative work from student artists.</p>
+            <a href="event.html">View Details</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="https://placehold.co/400x250/9b5de5/ffffff?text=Game+Night" alt="Students playing board games">
+          <div class="event-info">
+            <h3>Game Night</h3>
+            <p class="event-date"><time datetime="2026-10-24T18:30">Oct 24, 6:30 PM</time></p>
+            <p class="event-location">EUC Lounge</p>
+            <p class="event-category">Social</p>
+            <p>Board games, snacks, and prizes with friends.</p>
+            <a href="event.html">View Details</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        The Campus Event Guide is a student project made for the Office of
+        Student Engagement. It helps students find events that match their
+        interests.
+      </p>
+      <p>
+        Whether you want to make friends, build your resume, or just have
+        fun, there is an event for you.
+      </p>
+
+      <h3>Why use this guide?</h3>
+      <ul>
+        <li>Find events by category</li>
+        <li>Never miss a career fair</li>
+        <li>Give back through service events</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Campus Event Guide</p>
+    <p>Contact: <a href="mailto:events@campus.edu">events@campus.edu</a></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="event.html">Featured Event</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
