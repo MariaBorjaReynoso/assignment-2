@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A two-page website for Tabby Tech students to find campus events.
+A two page website for Tabby Tech students to find campus events.
 The home page shows upcoming events in a card grid. The event page
 shows full details about the Fall Concert.
 
