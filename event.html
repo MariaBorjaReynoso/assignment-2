@@ -4,74 +4,66 @@
   Date: 09.13.2026
   CSC 372-01
 
-  Featured event page for the Campus Event Guide. It shows details
-  about one event, a sidebar with event info, and related events.
+  Featured event page for the Campus Event Guide.
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus Event Guide | Fall Concert</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title> Tabby Tech </title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Same header as home page -->
   <header class="site-header">
-    <h1>Campus Event Guide</h1>
-    <p class="tagline">Find your next campus memory</p>
+    <h1> Tabby Tech</h1>
+    <p class="tagline">Find fun events on campus</p>
 
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#events">Upcoming Events</a></li>
+        <li><a href="index.html#events">Events</a></li>
         <li><a href="index.html#about">About</a></li>
-        <li><a href="event.html">Featured Event</a></li>
+        <li><a href="event.html">Upcoming</a></li> 
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <!-- Event introduction -->
+    <!-- Event intro -->
     <section class="event-intro">
       <h2>Fall Concert</h2>
 
       <figure class="event-image">
-        <img
-          src="https://placehold.co/1000x500/1e6091/ffffff?text=Fall+Concert"
-          alt="A band playing on a lit stage in front of a crowd">
-        <figcaption>Student bands performing at last year's concert.</figcaption>
+        <img src="images/concert.jpg" alt="Band Concert>
+        <figcaption>Student bands at last year's concert.</figcaption>
       </figure>
 
       <p class="event-details">
-        <span class="event-category">Music</span> ·
+        <span class="category">Music</span> ·
         <time datetime="2026-09-25T19:00">Friday, Sep 25, 2026, 7:00 PM</time> ·
         Cone Ballroom
       </p>
 
       <p>
-        Join us for a night of live music featuring student bands and a
-        special guest. It is the biggest music event of the semester.
+        A night of live music featuring student bands and a special guest.
       </p>
     </section>
 
-    <!-- Main content and sidebar (CSS Grid) -->
+    <!-- Main + sidebar (Grid) -->
     <div class="event-layout">
 
       <section class="event-main">
         <h3>Event Details</h3>
 
         <p>
-          Doors open at 6:30 PM. The show runs until 10:00 PM. The event is
-          free for students with a valid ID.
+          Doors open at 6:30 PM. The show runs until 10:00 PM. Free for
+          students with a valid ID.
         </p>
 
         <h4>What to Expect</h4>
-        <p>
-          Come ready to dance and meet other students. Food trucks will be
-          outside, and there will be a photo booth near the entrance.
-        </p>
+        <p>Live music, food trucks, and a photo booth.</p>
 
         <h4>Schedule</h4>
         <ul>
@@ -84,20 +76,18 @@
 
         <h4>Accessibility</h4>
         <p>
-          The Cone Ballroom is wheelchair accessible. If you need ASL
-          interpretation, please email us at least 72 hours in advance.
+          The venue is wheelchair accessible. Email us for ASL
+          interpretation at least 72 hours in advance.
         </p>
       </section>
 
       <aside class="event-sidebar">
         <h3>Event Info</h3>
-
         <p><strong>Date:</strong> Friday, Sep 25, 2026</p>
         <p><strong>Time:</strong> 7:00 PM – 10:00 PM</p>
         <p><strong>Location:</strong> Cone Ballroom</p>
         <p><strong>Organizer:</strong> Student Engagement</p>
-        <p><strong>Admission:</strong> Free with student ID</p>
-
+        <p><strong>Admission:</strong> Free with ID</p>
         <a class="button" href="#">Register Now</a>
       </aside>
 
@@ -110,19 +100,19 @@
       <div class="related-list">
 
         <article class="related-card">
-          <img src="https://placehold.co/300x180/2a9d8f/ffffff?text=Career+Fair" alt="Students at a career fair">
+          <img src="images/related-career.jpg" alt="Students at a career fair">
           <h3>Career Fair</h3>
           <p><time datetime="2026-10-02">Oct 2</time> · EUC</p>
         </article>
 
         <article class="related-card">
-          <img src="https://placehold.co/300x180/e76f51/ffffff?text=Volunteer+Day" alt="Volunteers at a park">
+          <img src="images/related-volunteer.jpg" alt="Volunteers at a park">
           <h3>Volunteer Day</h3>
           <p><time datetime="2026-10-10">Oct 10</time> · Arboretum</p>
         </article>
 
         <article class="related-card">
-          <img src="https://placehold.co/300x180/264653/ffffff?text=Art+Show" alt="Art in a gallery">
+          <img src="images/related-art.jpg" alt="Art in a gallery">
           <h3>Art Showcase</h3>
           <p><time datetime="2026-10-18">Oct 18</time> · Gatewood</p>
         </article>
@@ -132,7 +122,6 @@
 
   </main>
 
-  <!-- Same footer as home page -->
   <footer class="site-footer">
     <p>&copy; 2026 Campus Event Guide</p>
     <p>Contact: <a href="mailto:events@campus.edu">events@campus.edu</a></p>

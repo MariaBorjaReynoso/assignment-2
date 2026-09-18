@@ -4,19 +4,19 @@
   CSC 372-01
 
   Stylesheet for the Campus Event Guide.
-  I organized it in this order:
-  1. Base styles
-  2. Header and navigation
-  3. Hero
-  4. Event cards (CSS Grid)
+
+  1. Base
+  2. Header / nav (Flexbox)
+  3. Hero (Flexbox)
+  4. Event cards (Grid)
   5. About
-  6. Event page (main + sidebar)
+  6. Event page (main + sidebar, Grid)
   7. Related events (Flexbox)
   8. Footer
   9. Media queries
 */
 
-/* ---------- 1. Base styles ---------- */
+/* ---------- 1. Base ---------- */
 
 * {
   box-sizing: border-box;
@@ -43,7 +43,6 @@ img {
   display: block;
 }
 
-/* Simple button style */
 .button {
   display: inline-block;
   background-color: #e76f51;
@@ -59,7 +58,7 @@ img {
   background-color: #c95a3e;
 }
 
-/* ---------- 2. Header and navigation ---------- */
+/* ---------- 2. Header / nav (Flexbox) ---------- */
 
 .site-header {
   background-color: #003366;
@@ -79,7 +78,7 @@ img {
   color: #cce0ff;
 }
 
-/* Flexbox used here for navigation */
+/* Flexbox: nav links in a row */
 .site-header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -101,9 +100,9 @@ img {
   background-color: #1e6091;
 }
 
-/* ---------- 3. Hero ---------- */
+/* ---------- 3. Hero (Flexbox) ---------- */
 
-/* Flexbox used here to put text and image side by side */
+/* Flexbox: text next to image */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +133,7 @@ img {
   text-align: center;
 }
 
-/* ---------- 4. Event cards (CSS Grid) ---------- */
+/* ---------- 4. Event cards (Grid) ---------- */
 
 .events {
   max-width: 1000px;
@@ -142,7 +141,7 @@ img {
   padding: 0 20px;
 }
 
-/* Grid used here for the event cards */
+/* Grid: responsive event cards */
 .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,7 +155,7 @@ img {
   overflow: hidden;
 }
 
-/* Make the first card wider */
+/* First card is wider */
 .event-card:first-child {
   grid-column: span 2;
 }
@@ -175,15 +174,13 @@ img {
   margin-bottom: 5px;
 }
 
-.event-date,
-.event-location,
-.event-category {
+.event-info p {
   font-size: 14px;
   margin: 3px 0;
   color: #555;
 }
 
-.event-category {
+.category {
   display: inline-block;
   background-color: #eef3f8;
   color: #003366;
@@ -199,7 +196,7 @@ img {
   padding: 0 20px;
 }
 
-/* ---------- 6. Event page (main + sidebar) ---------- */
+/* ---------- 6. Event page (main + sidebar, Grid) ---------- */
 
 .event-intro {
   max-width: 1000px;
@@ -221,11 +218,7 @@ img {
   margin-top: 8px;
 }
 
-.event-details {
-  font-size: 15px;
-}
-
-/* Grid used here for main + sidebar */
+/* Grid: two-column layout */
 .event-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -266,7 +259,7 @@ img {
   padding: 0 20px;
 }
 
-/* Flexbox used here so cards wrap */
+/* Flexbox: cards wrap */
 .related-list {
   display: flex;
   flex-wrap: wrap;
@@ -316,6 +309,7 @@ img {
   color: #fff;
 }
 
+/* Flexbox: footer nav */
 .site-footer nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -328,7 +322,7 @@ img {
 
 /* ---------- 9. Media queries ---------- */
 
-/* Tablet and smaller */
+/* Tablet */
 @media (max-width: 800px) {
   .event-layout {
     grid-template-columns: 1fr;

@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <!--
   Name: Maria Reynoso
-  Date: 09/13/2026
+  Date: 09.13.2026
   CSC 372-01
 
-  This is the index.html file for the Campus Event Guide project. 
+  The index page for events happening in the University of Tabby Tech 
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus Event Guide | Home</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title> Tabby Tech</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Site header and navigation -->
   <header class="site-header">
-    <h1>Campus Event Guide</h1>
-    <p class="tagline">Let this be your go-to source for campus events!</p>
+    <h1> Tabby Tech</h1>
+    <p class="tagline">Find fun events on campus</p>
 
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#events">Upcoming Events</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="event.html">Event</a></li>
+        <li><a href="event.html">Upcoming</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <!-- Hero section -->
+    <!-- Hero -->
     <section class="hero">
       <div class="hero-text">
-        <h2>Welcome to Campus Events</h2>
-        <p>
-          Discover concerts, career fairs, volunteer days, and more.
-          There is always something happening on campus.
-        </p>
+        <h2>Welcome to Tabby Tech Events</h2>
+        <p>Discover concerts, career fairs, volunteer days, and more.</p>
         <a class="button" href="#events">See Upcoming Events</a>
       </div>
 
       <figure class="hero-image">
-        <img
-          src="src/images/campus-event.jpg"
-          alt="Students gathered on campus at an outdoor event">
-        <figcaption>Students at a campus event</figcaption>
+        <img src="images/tabbyUni.jpg" alt="Mascot Of Tabby Tech">
+        <figcaption>Image of the Tabby Tech mascot</figcaption>
       </figure>
     </section>
 
@@ -58,61 +52,73 @@
       <div class="event-grid">
 
         <article class="event-card">
-          <img src="src/images/band.jpg" alt="Band playing on stage">
+          <img src="images/concert.jpg" alt="Band playing on stage">
           <div class="event-info">
             <h3>Fall Concert</h3>
-            <p class="event-date"><time datetime="2026-09-25T19:00">Sep 25, 7:00 PM</time></p>
-            <p class="event-location">Cone Ballroom</p>
-            <p class="event-category">Music</p>
-            <p>Live music from student bands and a special guest.</p>
+            <p><time datetime="2026-09-25T19:00">Sep 25, 7:00 PM</time></p>
+            <p>Cone Ballroom</p>
+            <p class="category">Music</p>
+            <p>Live music from the orchestra.</p>
             <a href="event.html">View Details</a>
           </div>
         </article>
 
         <article class="event-card">
-          <img src="https://placehold.co/400x250/2a9d8f/ffffff?text=Career+Fair" alt="Students talking to employers">
+          <img src="images/careerFair.jpg" alt="Students talking to employers">
           <div class="event-info">
             <h3>Career Fair</h3>
-            <p class="event-date"><time datetime="2026-10-02T10:00">Oct 2, 10:00 AM</time></p>
-            <p class="event-location">EUC</p>
-            <p class="event-category">Career</p>
-            <p>Meet companies hiring for internships and jobs.</p>
+            <p><time datetime="2026-10-02T10:00">Oct 2, 10:00 AM</time></p>
+            <p>EUC</p>
+            <p class="category">Career</p>
+            <p>Meet companies hiring for parttime/full time jobs.</p>
             <a href="event.html">View Details</a>
           </div>
         </article>
 
         <article class="event-card">
-          <img src="https://placehold.co/400x250/e76f51/ffffff?text=Volunteer" alt="Volunteers working outside">
+          <img src="images/service.jpg" alt="Students volunteering packing meals for families">
           <div class="event-info">
             <h3>Volunteer Day</h3>
-            <p class="event-date"><time datetime="2026-10-10T09:00">Oct 10, 9:00 AM</time></p>
-            <p class="event-location">Arboretum</p>
-            <p class="event-category">Service</p>
-            <p>Spend a morning giving back to the community.</p>
+            <p><time datetime="2026-10-10T09:00">Oct 10, 9:00 AM</time></p>
+            <p>Arboretum</p>
+            <p class="category">Service</p>
+            <p>Give back to the families in need.</p>
             <a href="event.html">View Details</a>
           </div>
         </article>
 
         <article class="event-card">
-          <img src="https://placehold.co/400x250/264653/ffffff?text=Art+Show" alt="Paintings in a gallery">
+          <img src="images/art.jpg" alt="Paintings in a gallery"> 
           <div class="event-info">
             <h3>Art Showcase</h3>
-            <p class="event-date"><time datetime="2026-10-18T17:00">Oct 18, 5:00 PM</time></p>
-            <p class="event-location">Gatewood</p>
-            <p class="event-category">Arts</p>
-            <p>See creative work from student artists.</p>
+            <p><time datetime="2026-10-18T17:00">Oct 18, 5:00 PM</time></p>
+            <p>Weatherspoon Art Museum</p>
+            <p class="category">Arts</p>
+            <p>See student art work.</p>
             <a href="event.html">View Details</a>
           </div>
         </article>
 
         <article class="event-card">
-          <img src="https://placehold.co/400x250/9b5de5/ffffff?text=Game+Night" alt="Students playing board games">
+          <img src="images/gameNight.jpg" alt="Students playing videogames.">
           <div class="event-info">
             <h3>Game Night</h3>
-            <p class="event-date"><time datetime="2026-10-24T18:30">Oct 24, 6:30 PM</time></p>
-            <p class="event-location">EUC Lounge</p>
-            <p class="event-category">Social</p>
-            <p>Board games, snacks, and prizes with friends.</p>
+            <p><time datetime="2026-10-24T18:30">Oct 24, 6:30 PM</time></p>
+            <p>Tabby Tech Arena</p>
+            <p class="category">Social</p>
+            <p>PC's and snacks.</p>
+            <a href="event.html">View Details</a>
+          </div>
+        </article>
+
+         <article class="event-card">
+          <img src="images/art.jpg" alt="Paintings in a gallery"> 
+          <div class="event-info">
+            <h3>Art Showcase</h3>
+            <p><time datetime="2026-10-18T17:00">Oct 18, 5:00 PM</time></p>
+            <p>Weatherspoon Art Museum</p>
+            <p class="category">Arts</p>
+            <p>See student art work.</p>
             <a href="event.html">View Details</a>
           </div>
         </article>
@@ -120,30 +126,28 @@
       </div>
     </section>
 
-    <!-- About section -->
+    <!-- About -->
     <section id="about" class="about">
       <h2>About</h2>
       <p>
-        The Campus Event Guide is a student project made for the Office of
-        Student Engagement. It helps students find events that match their
-        interests.
+        The Campus Event Guide helps students find events that match
+        their interests.
       </p>
       <p>
-        Whether you want to make friends, build your resume, or just have
-        fun, there is an event for you.
+        Whether you want to make friends or build your resume, there is
+        an event for you.
       </p>
 
       <h3>Why use this guide?</h3>
       <ul>
         <li>Find events by category</li>
         <li>Never miss a career fair</li>
-        <li>Give back through service events</li>
+        <li>Give back through service</li>
       </ul>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <p>&copy; 2026 Campus Event Guide</p>
     <p>Contact: <a href="mailto:events@campus.edu">events@campus.edu</a></p>
