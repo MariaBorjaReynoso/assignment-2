@@ -3,20 +3,8 @@
   Date: 09.13.2026
   CSC 372-01
 
-  Stylesheet for the Campus Event Guide.
-
-  1. Base
-  2. Header / nav (Flexbox)
-  3. Hero (Flexbox)
-  4. Event cards (Grid)
-  5. About
-  6. Event page (main + sidebar, Grid)
-  7. Related events (Flexbox)
-  8. Footer
-  9. Media queries
-*/
-
-/* ---------- 1. Base ---------- */
+  The style file for the index and event pages fro tabby tech.
+**/
 
 * {
   box-sizing: border-box;
@@ -35,7 +23,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: #1e6091;
+  color: #2d0c67;
 }
 
 img {
@@ -58,10 +46,10 @@ img {
   background-color: #c95a3e;
 }
 
-/* ---------- 2. Header / nav (Flexbox) ---------- */
+/* --- Header / nav (Flexbox) --- */
 
 .site-header {
-  background-color: #003366;
+  background-color: #280b61;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -97,7 +85,7 @@ img {
 }
 
 .site-header nav a:hover {
-  background-color: #1e6091;
+  background-color: #25166e;
 }
 
 /* ---------- 3. Hero (Flexbox) ---------- */
@@ -183,7 +171,7 @@ img {
 .category {
   display: inline-block;
   background-color: #eef3f8;
-  color: #003366;
+  color: #18086c;
   padding: 2px 10px;
   border-radius: 12px;
 }
@@ -294,7 +282,7 @@ img {
 /* ---------- 8. Footer ---------- */
 
 .site-footer {
-  background-color: #003366;
+  background-color: #390d7b;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -320,7 +308,7 @@ img {
   padding: 0;
 }
 
-/* ---------- 9. Media queries ---------- */
+/* ----------  media ---------- */
 
 /* Tablet */
 @media (max-width: 800px) {
