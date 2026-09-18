@@ -3,7 +3,7 @@
   Date: 09.13.2026
   CSC 372-01
 
-  The style file for the index and event pages fro tabby tech.
+  The style file for the index and event pages for Tabby Tech.
 **/
 
 * {
@@ -88,7 +88,7 @@ img {
   background-color: #25166e;
 }
 
-/* ---------- 3. Hero (Flexbox) ---------- */
+/* ---------- Hero (Flexbox) ---------- */
 
 /* Flexbox: text next to image */
 .hero {
@@ -121,7 +121,7 @@ img {
   text-align: center;
 }
 
-/* ---------- 4. Event cards (Grid) ---------- */
+/* ---------- Event cards (Grid) ---------- */
 
 .events {
   max-width: 1000px;
@@ -176,7 +176,7 @@ img {
   border-radius: 12px;
 }
 
-/* ---------- 5. About ---------- */
+/* ---------- About ---------- */
 
 .about {
   max-width: 800px;
@@ -184,7 +184,7 @@ img {
   padding: 0 20px;
 }
 
-/* ---------- 6. Event page (main + sidebar, Grid) ---------- */
+/* ---------- Event page ---------- */
 
 .event-intro {
   max-width: 1000px;
@@ -239,7 +239,7 @@ img {
   margin: 8px 0;
 }
 
-/* ---------- 7. Related events (Flexbox) ---------- */
+/* ---------- Related events---------- */
 
 .related {
   max-width: 1000px;
@@ -279,7 +279,7 @@ img {
   color: #555;
 }
 
-/* ---------- 8. Footer ---------- */
+/* ---------- Footer ---------- */
 
 .site-footer {
   background-color: #390d7b;
@@ -308,7 +308,7 @@ img {
   padding: 0;
 }
 
-/* ----------  media ---------- */
+/* ---------- media ---------- */
 
 /* Tablet */
 @media (max-width: 800px) {
