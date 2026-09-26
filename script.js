@@ -3,7 +3,7 @@
   Date: 09.26.2026
   CSC 372-01
 
-  This script adds a save event feature to the Tabby Tech Campus
+  This page adds a save event feature to the Tabby Tech Campus
   Events home page. 
 */
 
