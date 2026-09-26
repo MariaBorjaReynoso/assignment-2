@@ -336,3 +336,61 @@ img {
     flex-direction: column;
   }
 }
+
+/* ---------- Save Event feature ---------- */
+
+.save-btn {
+  display: block;
+  margin: 0 15px 15px;
+  padding: 8px 14px;
+  background-color: #2d0c67;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #4a1a9b;
+}
+
+.event-card.saved {
+  border: 3px solid #e76f51;
+  background-color: #fff6f2;
+}
+
+.saved-events {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.saved-events h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+#empty-message {
+  color: #666;
+  font-style: italic;
+}
+
+#saved-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+#saved-list li {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+#saved-list strong {
+  color: #2d0c67;
+}

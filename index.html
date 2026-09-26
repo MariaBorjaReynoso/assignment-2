@@ -4,7 +4,7 @@
   Date: 09.13.2026
   CSC 372-01
 
-  The index page for events happening in the University of Tabby Tech 
+  The index page for events happening in the University of Tabby Tech
 -->
 <html lang="en">
 <head>
@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Tabby Tech </title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -41,7 +42,7 @@
 
       <figure class="hero-image">
         <img src="images/tabbyUni.jpg" alt="Mascot Of Tabby Tech">
-        <figcaption>Tabby Tech Mascot!</figcaption> 
+        <figcaption>Tabby Tech Mascot!</figcaption>
       </figure>
     </section>
 
@@ -87,14 +88,14 @@
           </div>
         </article>
 
-         <article class="event-card">
-          <img src="images/catDay.jpg" alt="Students with cats."> 
+        <article class="event-card">
+          <img src="images/catDay.jpg" alt="Students with cats.">
           <div class="event-info">
             <h3>Cat Day</h3>
             <p><time datetime="2026-10-30T12:00">Oct 30, 12:00 PM</time></p>
             <p>Tabby Tech Fountain</p>
             <p class="category">Social</p>
-            <p>Spending time with cute cats.</p> 
+            <p>Spending time with cute cats.</p>
             <a href="event.html">View Details</a>
           </div>
         </article>
@@ -110,8 +111,6 @@
             <a href="event.html">View Details</a>
           </div>
         </article>
-
-        
 
       </div>
     </section>
@@ -136,6 +135,13 @@
       </ul>
     </section>
 
+    <!-- Saved Events -->
+    <section id="saved-events" class="saved-events">
+      <h2>Saved Events</h2>
+      <p id="empty-message">Click "Save Event" on any event above.</p>
+      <ul id="saved-list"></ul>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -149,5 +155,6 @@
     </nav>
   </footer>
 
+  <script src="js/script.js" defer></script>
 </body>
-</html>
+</html> 
