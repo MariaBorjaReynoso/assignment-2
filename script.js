@@ -21,7 +21,7 @@ for (let index = 0; index < cards.length; index++) {
   // When button is clicked, save or remove the event
   button.addEventListener("click", function () {
     if (card.classList.contains("saved")) {
-      // Remove the event
+      // Remove the event from the saved list
       card.classList.remove("saved");
       this.textContent = "Save Event";
       removeFromList(card);
